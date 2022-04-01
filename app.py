@@ -5,7 +5,7 @@ Created on Wed Mar 23 10:32:36 2022
 @author: hhaeri
 """
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib as plt
 import requests
 import numpy as np
 import streamlit as st
@@ -176,6 +176,6 @@ ax.axis('off')
 CA_counties.apply(lambda x: ax.annotate(text=x['County_High_Ranks'], xy=x.geometry.centroid.coords[0], 
                                         ha='center', fontsize=3,bbox={'facecolor': 'none', 'alpha':0.8, 
                                                                       'pad': 1, 'edgecolor':'none'}),axis=1);
-plt.title('Map of average 10-days forecast of Daily Case Counts \n in school age population in California counties', fontsize=4) 
+plt.pyplot.title('Map of average 10-days forecast of Daily Case Counts \n in school age population in California counties', fontsize=4) 
 
 st.pyplot()        
