@@ -8,3 +8,5 @@ python-dotenv
 yfinance
 numpy
 geopandas
+matplotlib
+matplotlib.pyplot
